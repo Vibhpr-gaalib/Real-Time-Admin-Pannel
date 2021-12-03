@@ -1,0 +1,106 @@
+<%- include("./partials/header.ejs") %>
+
+<script src="/socket.io/socket.io.js" defer></script>
+<script src="../JS/MainPage.js" defer></script>
+<link rel="stylesheet" href="../CSS/MainPage.css" >
+<div class="content_container">
+
+    <div class="render_Url_form">
+        <form class="url_form">
+            <div class="Text_holder">
+                <h1 class="heading">Connect To Your Mongodb</h1>
+            </div>
+            <div class="form_container">
+             <input class="frm_field" type="url" name="url" alt="Loading Form" placeholder="Enter your Mongodb DataBase URL" value="" required>
+            </div>
+             <button class="connect_button" type="submit">Connect</button>
+        </form>
+        <div class="Connecting">
+            <h3 class="connecting">Connecting.....</h3>
+        </div>
+        <div class="conn">
+            <!-- /GetUserDB/Data/Section/212321hsyausaw23ahsb5msa6 -->
+            <h3 class="connecting">Connected with your db <span> <a class='click_me' href="#">Click Me</a> </span></h3>
+        </div>
+     </div>
+
+     <div class="holder_1">
+        <p class="close_sec">Close</p>
+        <p class="show_sec">Show</p>
+        <h3 class="DB_DETAI">Database Detail</h3>
+     <div class="show_Collection_Name_Container ">
+            <div class="Collection_title">
+                <h3>Collections Available</h3>
+            </div>
+            <div class="db_detail">
+                <h3>DataBase Details</h3>
+                <div class="db_stuff">
+                    <h3>Connected Db is :- <span class="DbName">DataBase Name</span></h3>
+                    <h3>Total Collections Avalable :- <span class="Collection_count">Collection Count</span></h3>
+                    <h3>Connection Status :- <span style="color: rgb(80, 199, 84);">Active</span></h3>
+                    <h3>Stop Current Connection :- <span class="Colose_connection">Click Here</span></h3>
+                </div>
+            </div>
+            <div class="OTHER_detail">
+                <h3>Other Information</h3>
+            </div>
+            <div class="show_names">
+                
+            </div>
+            <div class="show_collecion_data">
+
+                <div class="progress">
+                    <h4 class="please_wait">Please Wait While WE fecthing Data..</h4>
+                    <div class="color"></div>
+                  </div>
+
+            </div>
+            <div class="oth_details">
+                 <div class="slider_here">
+                    <div class="query_form_here">
+                         <h2>Create Collection</h2>
+                          <option value="show" class="show_query_form query_form_list">Show</option>
+                          <option value="Hide" class="hide_query_form query_form_list">Hide</option>
+                      </div>
+                        <div class="input_holder_createCollection_One">
+                            <input class="input collection_name" placeholder="Enter New Collection Name" >
+                            <button class="createCollection">Create Collection</button>
+                        </div>
+                </div>
+                <div class="slider_here2">
+                    <div class="query_form_here2">
+                         <h2>Add Data To Collection</h2>
+                          <option value="show" class="show_query_form2 query_form_list2">Show</option>
+                          <option value="Hide" class="hide_query_form2 query_form_list2">Hide</option>
+                      </div>
+                    <div class="input_holder_createCollection_Two">
+                        <input class="input CollectioName" placeholder="Enter New Collection Name" >
+                        <textarea cols="10" rows="15" class="input collection_data" name="collection_data" >
+{"name":"John", "birth":"1986-12-14", "city":"New York"}
+                        </textarea>
+                        <button class="Add_Data_TO_Collection">Add Data</button>
+                    </div>
+                </div>
+                <div class="slider_here">
+                    <div class="query_form_here">
+                         <h2>Upload CSV File</h2>
+                          <option value="show" class="show_query_form3 query_form_list3">Show</option>
+                          <option value="Hide" class="hide_query_form3 query_form_list3">Hide</option>
+                      </div>
+                        <div class="input_holder_createCollection_three">
+                           <form action="/uploadFileNow" method="POST" enctype="multipart/form-data"> <!--i need to add mutli form data here first-->
+                            <input type="file" class="input file" placeholder="Upload CSV File" name="uploadFile">
+                            <button class="uploadCSV">Upload CSV File</button>
+                           </form>
+                        </div>
+                </div>
+
+            </div>
+     </div>
+    </div>
+
+
+
+</div>
+
+<%- include("./partials/footer.ejs") %>

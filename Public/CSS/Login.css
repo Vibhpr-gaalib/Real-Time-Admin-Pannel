@@ -1,0 +1,98 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+} */
+.conatiner{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 3rem;
+}
+.conatiner >.Text_holder{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Register_button{
+    padding: 1rem 2rem;
+    background-color: rgb(30,106,217);
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px ;
+    outline: none;
+}
+
+.Register_button:hover{
+    background-color: white;
+    color: rgb(30,106,217);
+    outline: none;  
+    border:1px solid rgb(30,106,217);
+}
+form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conatiner >.Text_holder >h1{
+    color: white;
+    font-size: 4rem;
+}
+.conatiner >.Form_holder{
+        text-align: center;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 14px;
+        height: max-content;
+        width: 42rem;
+        display: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.conatiner >.Form_holder >h2{
+        color: black;
+        font-size: 1.9rem;
+        
+}
+
+.flex {
+    margin-top: 1rem;
+    padding: 1rem .5rem;
+    text-align: center;
+}
+.ss{
+    width: 70%;
+}
+input{
+    padding: .8rem .6rem;
+    text-align: center;
+    outline: none;
+}
+.regisButton{
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(30,106,217);
+    color: whitesmoke;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.regisButton:hover , .regisButton:focus{
+    background-color: white;
+    color: rgb(30,106,217);
+    outline: none;  
+    border:1px solid rgb(30,106,217);
+}
+hr.hh{
+    background-color: teal;
+}

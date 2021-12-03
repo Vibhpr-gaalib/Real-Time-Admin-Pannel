@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    padding: 0;
+}
+body{
+    margin: 0;
+} 
+.holder{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    background: #34e89e; 
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  
+    background: linear-gradient(to right, #0f3443, #34e89e); 
+}
+.container >h1{
+    font-size: 8rem;
+    color: #fff;
+    display: none;
+    text-shadow: 0 5px rgba(0,0,0,1);
+    mix-blend-mode: hard-light;
+}
+.child_tow{
+    position: absolute;
+    top: 2rem;
+    right: 1.4rem;
+    list-style: none;
+}
+.child_tow >.get_started{
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(30,106,217);
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.child_tow >.get_started:focus{
+    outline: none;
+}
+.child_tow >.get_started:hover{
+    background-color: white;
+    color: rgb(30,106,217);
+}
+
+.first_div2{
+    margin-top: 100vh;
+    height: 100vh;
+    position: relative;
+    background: #44A08D; 
+    background: -webkit-linear-gradient(to right, #093637, #44A08D); 
+    background: linear-gradient(to right, #093637, #44A08D); 
+    z-index: 1;
+}
+.first_div3{
+    height: 100vh;
+    position: relative;
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 1;
+}
+
+div.content_holder1{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: none;
+}
+div.content_holder2{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: none;
+}

@@ -1,0 +1,384 @@
+
+
+
+
+.content_container{
+    position: relative;
+    height: 100vh;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.render_Url_form{
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    border: 1px solid white;
+    top: 30%;
+    left: 40%;
+}
+.url_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+.form_container{
+    width: 100%;
+    text-align: center;
+    padding: 25px 15px;
+}
+.frm_field{
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.connect_button{
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(80, 199, 84);
+    color: whitesmoke;
+    border-radius: 3px;
+    text-decoration: none;  
+}
+.connect_button:hover{
+    background-color: whitesmoke;
+    color: rgb(80, 199, 84);
+    border: 1px solid rgb(80, 199, 84);
+    border-radius: 3px;
+    outline: none;
+}
+.Text_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    color: whitesmoke;
+}
+
+.Connecting{
+    display: none;
+}
+
+.connecting{
+    color: whitesmoke;
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 3s alternate-reverse infinite;
+}
+.Colose_connection{
+    color: rgb(30,106,217);
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 3s alternate-reverse infinite;
+    cursor: pointer;
+}
+
+
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.click_me{
+    color: rgb(30,106,217);
+    text-decoration: none;
+}
+.conn{
+    display: none;
+}
+.show_Collection_Name_Container{
+    position: relative;
+    height: 100vh;
+    display: none;
+    margin-top: 1.2rem;
+    grid-template-columns: 20% 30% 30% 1fr;
+    grid-template-rows: 20% 30% 30% 1fr;
+    padding: 10px 15px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.Collection_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    border: 2px solid rgb(0,0,0);
+}
+
+.db_detail{
+    grid-column: 2 / span 2;
+    background-color: ghostwhite;
+    border: 2px solid rgb(0,0,0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.OTHER_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    border: 2px solid rgb(0,0,0);
+}
+.show_names{
+    grid-row: 2 / 2 span;
+    background-color: brown;
+    overflow-y: scroll;
+    border: 2px solid rgb(0,0,0);
+}
+.show_names >li{
+    list-style: none;
+}
+.show_collecion_data{
+    position: relative;
+    grid-row: 2 / max;
+    grid-column: 2 / 2 span;
+    background-color: rgb(240, 240, 240);
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    text-align: center;
+    border: 2px solid rgb(0,0,0);
+}
+.oth_details{
+    grid-row: 2 / span 2;
+    background-color:hotpink;
+    overflow-y: scroll;
+    border: 2px solid rgb(0,0,0);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:  rgb(30,106,217);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background:  rgb(30,106,217);
+}
+
+.Show{
+   color: blue;
+   cursor: pointer;
+}
+
+.listOf_Collection_data_holder{
+        background-color: beige;
+        color: rgb(30,106,217);
+        height: 200px;
+        padding: 10px 20px;
+        width: 50%;
+        box-sizing: border-box;
+        margin: 10px 15px;
+}
+
+.listOf_Collection_data_holder >div{
+    white-space: pre-line;
+    overflow-wrap: break-word;
+    height: 100%;
+}
+
+ol{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+Progresss  bar animation here
+*/
+.progress{
+    position: absolute;
+    height: 20px;
+    width: 50%;
+    border-radius: 15px;
+    top: 40%;
+    left: 30%;
+    display: none;
+    z-index: 10;
+}
+.progress .color{
+    position: absolute;
+    background-color: rgb(30,106,217);
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
+h4.please_wait{
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 3s alternate-reverse infinite;
+}
+
+
+div.holder_1{
+    padding-top: 20px;
+    min-height: 50px;
+    background-color: cadetblue;
+    position: relative;
+    list-style: none;
+    display: none;
+}
+div.holder_1 >p{
+    position: absolute;
+    top: 10px;
+    color: rgb(30,106,217);
+    left: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+.show_sec{
+    position: absolute;
+    top: 10px;
+    color: rgb(30,106,217);
+    left: 10px;
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+}
+h3.DB_DETAI{
+    position: absolute;
+    top: 10px;
+    color: rgb(30,106,217);
+    right: 10px;
+    z-index: 10;
+}
+.Show_text{
+    content: Show;
+}
+
+li.Collection_list{
+    list-style: none;
+    text-decoration: none;
+    margin: 20px;
+    padding: 8px 10px;
+    border: 1px solid black;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+}
+.Show{
+    padding: 10px 15px;
+    width: max-content;
+    color: rgb(30,106,217);
+}
+.Delete_button{
+    padding: 10px 15px;
+    width: max-content;
+    color: rgb(30,106,217);
+    cursor: pointer;
+}
+.show_delete_holder{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ul_listofDataFromDB{
+    padding: 0 4px;
+}
+
+.slider_here, .slider_here2{
+    padding: 10px;
+    background-color: #7fffd4;
+    text-align: center;
+    min-height: 50px;
+}
+
+.input_holder_createCollection_One , .input_holder_createCollection_Two{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    height: 300px;
+    justify-items: center;
+}
+
+.input{
+    margin: 10px 0px;
+    padding: 7px;
+}
+.query_form_here,.query_form_here2{
+    display: flex;
+    justify-content: space-around;
+}
+.query_form_list, .query_form_list2,.hide_query_form3{
+    color: rgb(30,106,217);
+    cursor: pointer;
+}
+
+.hide_query_form,.hide_query_form2{
+    display: none;
+}
+.createCollection,.Add_Data_TO_Collection{
+    max-width: max-content;
+    padding: 10px;
+    align-self: center;
+}
+
+.hide_query_form3{
+    display: none;
+}
+.show_query_form3{
+    color: rgb(30,106,217);
+    cursor: pointer;
+}
+.file{
+    border: .3px solid black;
+    padding: 10px 5px;
+    width: 100%;
+    
+}

@@ -1,0 +1,43 @@
+<%- include("./partials/header.ejs") %>
+<link rel="stylesheet" href="../CSS/Register.css">
+<script src="../JS/Register.js"></script>
+<div class="conatiner">
+    <div class="Text_holder">
+        <h1>
+            Admin Pannel
+            <hr>
+        </h1>  
+       
+       <a class="login_button" href="/login">Login</a>   
+    </div>
+    <div class="Form_holder">
+        <h2>
+            REGISTRATION    
+        </h2>
+        <hr class="hh">
+        <form method="POST" action="/GetRegister">
+                <div class="flex div_one">
+                    <input type="text" placeholder="First Name" name="Fname" required >
+                    <input type="text" placeholder="Last Name" name="Lname" required>
+                </div>
+                <div class="flex div_two ">
+                    <input class="ss" type="text" placeholder="Email Address" name="Email" required>
+                </div>
+                <div class="flex div_two ">
+                    <input class="ss" type="password" placeholder="Password" name="Pass" required>
+                </div> 
+                <div class="flex div_one">
+                    <input type="text" placeholder="Country Name" name="Country" required >
+                    <input type="text" placeholder="State Name" name="State" required>
+                </div> 
+                <div class="flex div_two ">
+                    <input class="ss" type="number" placeholder="Pincode" name="Pin" required>
+                </div>
+                <div class="flex div_two ">
+                    <button class="regisButton" type="submit">Register</button>
+                </div>
+        </form>
+    </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>

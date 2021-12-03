@@ -1,0 +1,32 @@
+<%- include("./partials/header.ejs") %>
+<link rel="stylesheet" href="../CSS/Login.css">
+<script src="../JS/Login.js"></script>
+<div class="conatiner">
+    <div class="Text_holder">
+        <h1>
+            Admin Pannel
+            <hr>
+        </h1>   
+        <a class="Register_button" href="/Register">Register</a> 
+    </div>
+    <div class="Form_holder">
+        <h2>
+            LOGIN    
+        </h2>
+        <hr class="hh">
+        <form method="POST" action="/login">
+               
+                <div class="flex div_two ">
+                    <input class="ss" type="text" placeholder="Email Address" name="Email" required>
+                </div>
+                <div class="flex div_two ">
+                    <input class="ss" type="password" placeholder="Password" name="Pass" required>
+                </div> 
+                <div class="flex div_two ">
+                    <button class="regisButton" type="submit">Login</button>
+                </div>
+        </form>
+    </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>
